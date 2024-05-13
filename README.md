@@ -1,16 +1,10 @@
 # martest
 
-Experiment field, switch branches for more.
+Experiment field, switch branches for more!
 
 ## Getting started
 
-Install dependencies:
-
-```shell
-bun i
-```
-
-See what's going on here:
+Get bun prepared and then:
 
 ```shell
 bun start

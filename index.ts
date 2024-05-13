@@ -1,1 +1,1 @@
-console.log('Welcome to martest!')
+console.log('Welcome to martest, switch branches for more!')
