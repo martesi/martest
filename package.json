@@ -4,5 +4,9 @@
   "type": "module",
   "scripts": {
     "start": "bun i && bun index.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8",
+    "zod-to-ts": "^1.2.0"
   }
 }
