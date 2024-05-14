@@ -4,5 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "bun index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1"
   }
 }
