@@ -45,6 +45,10 @@ const map = {
 
 // helper
 
+type ReplaceDotWithUnderline<T> = T extends `${infer H}.${infer E}`
+  ? `${H}_${E}`
+  : T
+
 const ue = new Proxy(
   {},
   {
@@ -72,9 +76,9 @@ const ue = new Proxy(
     },
   }
 ) as unknown as {
-  [K in keyof typeof map as K extends `${infer H}.${infer E}`
-    ? `${H}_${E}`
-    : never]: (params: z.infer<(typeof map)[K]>) => Promise<unknown>
+  [K in keyof typeof map as ReplaceDotWithUnderline<K>]: (
+    params: z.infer<(typeof map)[K]>
+  ) => Promise<unknown>
 }
 
 // ts will say this is wrong
