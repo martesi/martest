@@ -4,7 +4,13 @@ Experiment field, switch branches for more!
 
 ## Getting started
 
-Get bun prepared and then:
+Install dependencies:
+
+```shell
+bun i
+```
+
+See what's going on:
 
 ```shell
 bun start
